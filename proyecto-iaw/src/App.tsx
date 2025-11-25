@@ -1,35 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route, NavLink, Navigate } from "react-router-dom";
+import Navbar from "./componentes/navbar";
+
+import Inicio from "./paginas/inicio";
+import Supermercados from "./paginas/supermercados";
+import Trabaja from "./paginas/trabaja";
+import AtCliente from "./paginas/at_cliente";
+import error404 from "./paginas/error404"; 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <Router>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/supermercados" element={<Supermercados />} />
+        <Route path="/trabaja" element={<Trabaja />} />
+        <Route path="/at_cliente" element={<AtCliente />} />
+
+{/* si no existe ruta -- lleva a una pag error 404  */}
+        <Route path="*" element={<error404 />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App
