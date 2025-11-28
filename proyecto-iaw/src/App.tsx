@@ -1,5 +1,5 @@
-import { BrowserRouter as Router, Routes, Route, NavLink, Navigate } from "react-router-dom";
-// import Navbar from "./componentes/navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navb from "./componentes/navbar";
 import Inicio from "./paginas/inicio";
 // import Supermercados from "./paginas/supermercados";
 // import Trabaja from "./paginas/trabaja";
@@ -9,6 +9,8 @@ import Inicio from "./paginas/inicio";
 function App() {
   return (
     <Router>
+      <Navb />
+
       <Routes>
         <Route path="/" element={<Inicio />} />
         {/* <Route path="/supermercados" element={<Supermercados />} />
