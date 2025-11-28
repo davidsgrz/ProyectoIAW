@@ -36,7 +36,8 @@ export default function Footer() {
           <div className="footer__phone">
             <span className="image">
                 <img src="/assets/call-center.png" className="img-fluid" alt="Responsive image" />
-            </span> <span></span>
+            </span>
+            <span/>
             <span>800 500 220</span>
           </div>
 

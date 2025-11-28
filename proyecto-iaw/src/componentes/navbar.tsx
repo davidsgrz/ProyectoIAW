@@ -5,7 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function Navb() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary justify-content-md-center" sticky='top'>
       <Container>
         <Navbar.Brand href="/">Mercadona</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -15,7 +15,7 @@ function Navb() {
             <Nav.Link href="/supermercados">Supermercados</Nav.Link>
             <Nav.Link href="/trabaja">Trabaja con nosotros</Nav.Link>
             <Nav.Link href="/at_cliente">Atención al Cliente</Nav.Link>
-            <NavDropdown title="Idioma" id="basic-nav-dropdown">
+            <NavDropdown title="Idioma" id="basic-nav-dropdown" className='justify-content'>
               <NavDropdown.Item href="#action/3.1">Español</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Valenciá
