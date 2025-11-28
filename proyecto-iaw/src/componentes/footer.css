@@ -1,0 +1,51 @@
+.footer {
+  width: 100%;
+  background: #0b2a32; /* azul petróleo como Mercadona */
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  padding-top: 40px;
+}
+
+/* ----- ZONA SUPERIOR: Columnas ----- */
+.footer__top {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding: 0 40px 40px;
+  flex-wrap: wrap;
+}
+
+.footer__col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 150px;
+}
+
+.footer__col h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer__col a {
+  color: #cbd3d4;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.footer__col a:hover {
+  color: #ffffff;
+}
+
+/* ----- ZONA INFERIOR: Derechos legales ----- */
+.footer__bottom {
+  width: 100%;
+  border-top: 1px solid #1b3e45;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #d7e
+}
