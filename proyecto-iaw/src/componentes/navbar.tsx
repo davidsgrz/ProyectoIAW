@@ -5,8 +5,8 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function Navb() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary justify-content-md-center" sticky='top'>
-      <Container>
+    <Navbar className="o-navbar-fluid navbar-expand-lg fixed-top bg-light" expand="lg">
+      <Container className='w-75'>
         <Navbar.Brand href="/">Mercadona</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

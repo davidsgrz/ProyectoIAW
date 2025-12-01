@@ -10,7 +10,8 @@ function Supermercados() {
       <Header
         text="Bienvenido a la página de Supermercado"
         alignment="start"
-        imageUrl="./assets/Supermercados."
+        color="light"
+        imageUrl="./assets/Supermercados.jpg"
       />
 
       {/* Contenido debajo del header */}

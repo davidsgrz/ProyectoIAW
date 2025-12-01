@@ -5,7 +5,7 @@ import Header from "../componentes/header";
 function Inicio() {
   return (
     // clase contenedora de bootstrap para que no ocupe todo el ancho
-    <div className="container mt-4">
+    <div className="mt-4">
       {/* Encabezado con imagen del public */}
       <Header
         text="Bienvenido a la página de inicio que se encuentra en inicio.tsx"
@@ -14,13 +14,27 @@ function Inicio() {
       />
 
       {/* Contenido debajo del header */}
-      <div>
-        <h3>Página de Inicio</h3>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus est perferendis earum vel nesciunt nisi sed officia numquam neque a, accusantium quod iste laborum odit voluptas fuga ducimus. Similique, sapiente.
-        </p>
-      </div>
-
+      <section className="container my-5 w-50">
+        <div className="row align-items-center">
+          <div className="col-lg-6">
+            <h3 className="h3 mb-3">Compra online</h3>
+            <p className="lead">Recibe tu pedido en casa con la misma calidad y frescura de siempre.</p>
+          </div>
+          <div className="col-lg-6 mt-4 mt-lg-0">
+            <img src="./assets/worker1.jpeg" alt="" className="img-fluid rounded shadow-lg" />
+          </div>
+        </div>
+        <div className="row align-items-center mt-5">
+          <div className="col-lg-6 mt-4 mt-lg-0">
+            <img src="./assets/worker1.jpeg" alt="" className="img-fluid rounded shadow-lg" />
+          </div>
+          <div className="col-lg-6">
+            <h3 className="h3 mb-3">Compra online</h3>
+            <p className="lead">Recibe tu pedido en casa con la misma calidad y frescura de siempre.</p>
+          </div>
+          
+        </div>  
+      </section>
     </div>
   );
 };
