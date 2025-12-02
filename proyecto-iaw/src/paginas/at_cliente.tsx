@@ -8,18 +8,23 @@ function At_Cliente() {
     <div className="container mt-4">
       {/* Encabezado con imagen del public */}
       <Header
-        text="Bienvenido a la página de inicio que se encuentra en inicio.tsx"
-        alignment="end"
-        imageUrl="./assets/banner_mercadona_inicio.jpg"
+        text="Atención al Cliente"
+        alignment="start"
+        color="light"
+        imageUrl="./assets/At_cliente.jpg"
       />
-
+      <form className="d-flex" role="search">
+      <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button className="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
       {/* Contenido debajo del header */}
-      <div>
-        <h3>Página de Inicio</h3>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus est perferendis earum vel nesciunt nisi sed officia numquam neque a, accusantium quod iste laborum odit voluptas fuga ducimus. Similique, sapiente.
-        </p>
-      </div>
+     <div className="card" style={{width: "18rem", marginTop: "20px"}}>
+      <div className="card-body">
+      <h5 className="card-title">Mercadona cuenta con 1.603 supermercados. Encuentra tu Mercadona más cercano y su horario</h5>
+      
+      
+       </div>
+    </div>
 
     </div>
   );
