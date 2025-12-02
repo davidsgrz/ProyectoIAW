@@ -14,18 +14,39 @@ function At_Cliente() {
         imageUrl="./assets/At_cliente.jpg"
       />
       <form className="d-flex" role="search">
-      <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
         <button className="btn btn-outline-success" type="submit">Buscar</button>
       </form>
       {/* Contenido debajo del header */}
-     <div className="card" style={{width: "18rem", marginTop: "20px"}}>
-      <div className="card-body">
-      <h5 className="card-title">Mercadona cuenta con 1.603 supermercados. Encuentra tu Mercadona más cercano y su horario</h5>
-      
-      
-       </div>
-    </div>
-
+      <div className="card-group">
+        <div className="card" style={{ width: "18rem", marginTop: "20px" }}>
+          <img src="..." className="card-img-top" alt="..." />
+          <div className="card-body">
+            <p className="card-text">Te atendemos de lunes a domingo de 7 a 22:30h, 1h menos en Canarias.</p>
+            <p className="card-text">Teléfono: 900 500 103</p>
+            <p className="card-text">(gratuito)</p>
+          </div>
+        </div>
+        <div className="card" style={{ width: "18rem", marginTop: "20px" }}>
+          <img src="..." className="card-img-top" alt="..." />
+          <div className="card-body">
+            <p className="card-text">¡Hola soy Carol, tu asistente virtual de WhatsApp!</p>
+            <p>¿En qué puedo ayudarte?</p>
+          </div>
+        </div>
+        <div className="card" style={{ width: "18rem", marginTop: "20px" }}>
+          <img src="..." className="card-img-top" alt="..." />
+          <div className="card-body">
+            <p className="card-text">Haznos llegar tus comentarios a través de este formulario o escríbenos a nuestro correo.</p>
+          </div>
+        </div>
+        <div className="card" style={{ width: "18rem", marginTop: "20px" }}>
+          <img src="..." className="card-img-top" alt="..." />
+          <div className="card-body">
+            <p className="card-text">También puedes contactar con nosotros desde nuestro Facebook, X, YouTube, Instagram y LinkedIn.</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
