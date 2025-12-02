@@ -1,42 +1,54 @@
 import Header from "../componentes/header";
 
-// la estoy usando de ejemplo, se puede borrar en cualquier momento
-
 function Inicio() {
   return (
-    // clase contenedora de bootstrap para que no ocupe todo el ancho
     <div className="mt-4">
-      {/* Encabezado con imagen del public */}
       <Header
         text="Bienvenido a la página de inicio que se encuentra en inicio.tsx"
         alignment="end"
         imageUrl="./assets/banner_mercadona_inicio.jpg"
       />
-
-      {/* Contenido debajo del header */}
-      <section className="container my-5 w-50">
-        <div className="row align-items-center">
-          <div className="col-lg-6">
-            <h3 className="h3 mb-3">Compra online</h3>
-            <p className="lead">Recibe tu pedido en casa con la misma calidad y frescura de siempre.</p>
-          </div>
-          <div className="col-lg-6 mt-4 mt-lg-0">
-            <img src="./assets/worker1.jpeg" alt="" className="img-fluid rounded shadow-lg" />
+      <section className="container-fluid py-5">
+        <div className="container-md mx-auto">
+          <div className="row align-items-center justify-content-evenly">
+            <div className="col-lg-4 mb-4 text-start">
+              <h3 className="fw-bold mb-2 fs-5 ps-5">Compra online</h3>
+              <p className="text-secondary small ps-5">
+                Recibe tu pedido en casa con la misma calidad y frescura de siempre.
+              </p>
+            </div>
+            <div className="col-lg-4">
+              <img
+                src="./assets/worker1.jpeg"
+                alt="Cajera en supermercado sonriendo"
+                className="img-fluid rounded"
+              />
+            </div>
           </div>
         </div>
-        <div className="row align-items-center mt-5">
-          <div className="col-lg-6 mt-4 mt-lg-0">
-            <img src="./assets/worker1.jpeg" alt="" className="img-fluid rounded shadow-lg" />
+      </section>
+      <section className="container-fluid bg-light py-5">
+        <div className="container-md mx-auto">
+          <div className="row align-items-center justify-content-evenly">
+            <div className="col-lg-4 mb-4">
+              <img
+                src="./assets/worker1.jpeg"
+                alt="Trabajador de almacén"
+                className="img-fluid rounded"
+              />
+            </div>
+            <div className="col-lg-4 text-start">
+              <h3 className="fw-bold mb-2 fs-5 pe-5">Nueva tienda online en algunas zonas</h3>
+              <p className="text-secondary small pe-5">
+                Por el momento, la nueva app y web está disponible en Valencia, Barcelona, Madrid y otras poblaciones. Introduce tu código postal arriba para ver si repartimos en tu zona. Si aún no llegamos, ¡apúntate y te avisamos!
+              </p>
+              <a href="#" className="text-success fw-semibold small">Avísame</a>
+            </div>
           </div>
-          <div className="col-lg-6">
-            <h3 className="h3 mb-3">Compra online</h3>
-            <p className="lead">Recibe tu pedido en casa con la misma calidad y frescura de siempre.</p>
-          </div>
-          
-        </div>  
+        </div>
       </section>
     </div>
   );
-};
+}
 
 export default Inicio;
