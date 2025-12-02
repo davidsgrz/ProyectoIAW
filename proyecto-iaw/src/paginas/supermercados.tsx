@@ -15,15 +15,21 @@ function Supermercados() {
       />
 
       {/* Contenido debajo del header */}
-      <div>
-        <h3>Página de Inicio</h3>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus est perferendis earum vel nesciunt nisi sed officia numquam neque a, accusantium quod iste laborum odit voluptas fuga ducimus. Similique, sapiente.
-        </p>
-      </div>
+     <div className="card" style={{width: "18rem", marginTop: "20px"}}>
+      <div className="card-body">
+      <h5 className="card-title">Mercadona cuenta con 1.603 supermercados. Encuentra tu Mercadona más cercano y su horario</h5>
+      <form className="d-flex" role="search">
+      <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button className="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+      
+       </div>
+    </div>
 
     </div>
   );
 };
+
+      
 
 export default Supermercados;
