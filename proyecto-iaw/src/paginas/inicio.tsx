@@ -5,7 +5,7 @@ import Navb from "../componentes/navbar";
 
 function Inicio() {
   return (
-    <div className="mt-4">
+    <div>
       <Navb />
       <Header
         text=" "
