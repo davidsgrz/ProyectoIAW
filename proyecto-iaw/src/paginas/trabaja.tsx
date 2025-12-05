@@ -8,16 +8,17 @@ function Trabaja() {
     <div className="container mt-4">
       {/* Encabezado con imagen del public */}
       <Header
-        text="Bienvenido a la página de inicio que se encuentra en inicio.tsx"
+        text="Somos más de 100.000 talentos compartiendo un proyecto común"
         alignment="end"
-        imageUrl="./assets/banner_mercadona_inicio.jpg"
+        videoUrl="./assets/Trabaja.mp4"
+        
       />
 
       {/* Contenido debajo del header */}
       <div>
-        <h3>Página de Inicio</h3>
+        <h3>Nuestras ofertas</h3>
         <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus est perferendis earum vel nesciunt nisi sed officia numquam neque a, accusantium quod iste laborum odit voluptas fuga ducimus. Similique, sapiente.
+            Entra en nuestro portal de empleo y descubre las oportunidades laborales que Mercadona tiene para ti. Únete a un equipo comprometido con la calidad, la innovación y el bienestar de sus empleados.
         </p>
       </div>
 

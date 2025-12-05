@@ -6,17 +6,32 @@ interface BackgroundTextProps {
   text: string;
   color?: "light" | "dark";
   alignment?: "start" | "center" | "end";
-  imageUrl: string;
+  imageUrl?: string;
+  videoUrl?: string;
 }
 
 // Componente Header: muestra una imagen de fondo con un texto encima
-function Header({ text, color = "dark", alignment = "center", imageUrl }: BackgroundTextProps) {
+function Header({ text, color = "dark", alignment = "center", imageUrl, videoUrl }: BackgroundTextProps) {
+  const hasVideo = Boolean(videoUrl && videoUrl.trim() !== "");
+
   return (
     <header
-      // Contenedor principal con imagen de fondo y alineación del texto
-      className={`d-flex align-items-center justify-content-${alignment} text-${color} header-bg`}
-      style={{ backgroundImage: `url(${imageUrl})` }}
+      className={`d-flex align-items-center justify-content-${alignment} text-${color} header-bg position-relative`}
+      style={!hasVideo ? { backgroundImage: `url(${imageUrl})` } : {}}
     >
+      {hasVideo && (
+        <video
+          className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src={videoUrl} type="video/mp4" />
+        </video>
+      )}
+
+   
       <div
         // Caja que contiene el texto, con tamaño y alineación
         className={`text-${alignment} w-50 p-3 bg-opacity-100 rounded`}
