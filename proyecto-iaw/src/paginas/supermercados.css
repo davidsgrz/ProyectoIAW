@@ -1,0 +1,83 @@
+.page-wrapper {
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section {
+    background-image: url('/assets/Supermercados.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 380px;
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 100%);
+    z-index: 1;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+.mercadona-btn {
+    background-color: #007a4d;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 0 1.5rem;
+}
+.mercadona-btn:hover {
+    background-color: #005f3b;
+    color: white;
+}
+
+.sticky-note {
+    background-color: #ffefc1; 
+    transform: rotate(3deg); 
+    max-width: 280px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.location-link {
+    color: #007a4d;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid #007a4d;
+}
+
+.page-wrapper .footer {
+    background-color: #007a4d !important;
+    color: white;
+}
+
+.page-wrapper .footer a {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.page-wrapper .footer a:hover {
+    color: #ffffff; 
+}
+
+.page-wrapper .footer h4 {
+    color: #ffffff;
+}
+
+.page-wrapper .footer i {
+    color: #ffffff;
+    opacity: 1;
+}
+@media (max-width: 768px) {
+    .w-75 {
+        width: 100% !important;
+    }
+}

@@ -1,35 +1,75 @@
-import Header from "../componentes/header";
-
-// la estoy usando de ejemplo, se puede borrar en cualquier momento
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavbarSec from '../componentes/NavbarSec';
+import Footer from '../componentes/footer';
+import Header from '../componentes/header'; // Componente reutilizable para el banner superior
+import '../paginas/Supermercados.css'; // Estilos específicos de esta página
 
 function Supermercados() {
   return (
-    // clase contenedora de bootstrap para que no ocupe todo el ancho
-    <div className="container mt-4">
-      {/* Encabezado con imagen del public */}
-      <Header
-        text="Bienvenido a la página de Supermercado"
-        alignment="start"
-        color="light"
-        imageUrl="./assets/Supermercados.jpg"
-      />
-
-      {/* Contenido debajo del header */}
-     <div className="card" style={{width: "18rem", marginTop: "20px"}}>
-      <div className="card-body">
-      <h5 className="card-title">Mercadona cuenta con 1.603 supermercados. Encuentra tu Mercadona más cercano y su horario</h5>
-      <form className="d-flex" role="search">
-      <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-success" type="submit">Buscar</button>
-      </form>
+    //para el fondo general de la página
+    <div className="page-wrapper">
       
-       </div>
-    </div>
+      {/* Contenedor central */}
+      <div className="d-flex flex-column w-75 mx-auto bg-white shadow-sm min-vh-100">
+        
+        {/* Barra de navegación secundaria */}
+        <NavbarSec />
+        <Header 
+            text="Supermercados"
+            breadcrumbs="Inicio > Supermercados"
+            imageUrl="/assets/Supermercados.jpg"
+            color="light"
+            alignment="start"
+            isHero={false}
+        />
 
+        {/* Contenido Principal */}
+        <div className="container mt-5 mb-5 flex-grow-1">
+          <div className="row justify-content-center align-items-center">
+            
+            {/* Columna de la izquierda */}
+            <div className="col-lg-8 text-center text-lg-start mb-5 mb-lg-0">
+              <h2 className="fw-normal mb-1">Mercadona cuenta con 1.603 supermercados.</h2>
+              <h3 className="fw-normal mb-4 text-muted">Encuentra tu Mercadona más cercano y su horario</h3>
+              
+              {/* cuadro busqueda */}
+              <form className="d-flex justify-content-center justify-content-lg-start mb-3">
+                <div className="input-group input-group-lg w-100 shadow-sm" style={{ maxWidth: '600px' }}>
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Ciudad, código postal o dirección"
+                    aria-label="Buscar"
+                  />
+                  <button className="btn mercadona-btn" type="button">
+                    <i className="bi bi-search"></i> Buscar
+                  </button>
+                </div>
+              </form>
+
+              {/* Enlace de localizador */}
+              <a href="#" className="location-link">
+                <i className="bi bi-cursor-fill me-1"></i> Usar mi localización actual
+              </a>
+            </div>
+
+            {/* === COLUMNA DERECHA: Nota destacada === */}
+            <div className="col-lg-4 d-flex justify-content-center">
+              {/* El post it  */}
+              <div className="sticky-note shadow">
+                <p className="mb-2 fs-5">Descubre las tiendas que disponen de la nueva sección <strong>Listo para Comer</strong>.</p>
+                <p className="mb-0">Encuentra tu tienda <a href="#" className="text-primary fw-bold text-decoration-none">aquí</a>.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        {/* Pie de página */}
+        <Footer/>
+      </div>
     </div>
   );
-};
-
-      
+}
 
 export default Supermercados;

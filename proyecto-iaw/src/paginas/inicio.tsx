@@ -1,13 +1,17 @@
+import Footer from "../componentes/footer";
 import Header from "../componentes/header";
+import Navb from "../componentes/navbar";
 
 function Inicio() {
   return (
     <div className="mt-4">
+      <Navb />
       <Header
         text="Empieza tu compra en Mercadona"
         alignment="end"
         imageUrl="./assets/banner_mercadona_inicio.jpg"
       />
+      {/* Primera seccion del contenido */}
       <section className="container-fluid py-5">
         <div className="container-md mx-auto">
           <div className="row align-items-center justify-content-evenly">
@@ -27,12 +31,13 @@ function Inicio() {
           </div>
         </div>
       </section>
+      {/* Segunda seccion del contenido */}
       <section className="container-fluid bg-light py-5">
         <div className="container-md mx-auto">
           <div className="row align-items-center justify-content-evenly">
             <div className="col-lg-4 mb-4">
               <img
-                src="./assets/worker1.jpeg"
+                src="./assets/worker2.jpeg"
                 alt="Trabajador de almacén"
                 className="img-fluid rounded"
               />
@@ -47,6 +52,7 @@ function Inicio() {
           </div>
         </div>
       </section>
+      <Footer/>
     </div>
   );
 }

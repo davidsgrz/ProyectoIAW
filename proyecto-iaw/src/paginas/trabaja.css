@@ -1,0 +1,61 @@
+/* === 1. Navbar: Transiciones y Estados === */
+.navbar-wrapper {
+    width: 100%;
+    z-index: 1050;
+    transition: background-color 0.4s ease, padding 0.4s ease;
+}
+
+.navbar-wrapper.transparent {
+    background-color: transparent;
+    padding-top: 15px;
+}
+
+.navbar-wrapper.transparent .mercadona-header,
+.navbar-wrapper.transparent .top-bar, 
+.navbar-wrapper.transparent .bg-white {
+    background-color: transparent !important;
+    background: transparent !important;
+    border-bottom: none !important;
+}
+
+.navbar-wrapper.scrolled {
+    background-color: white;
+    padding-top: 0;
+}
+
+/* === 2. Header: Dimensiones y Posicionamiento === */
+.header-full-width {
+    width: 100%;
+    position: relative;
+    top: 0;
+}
+
+.header-bg {
+    min-height: 600px;
+}
+
+/* === 3. Contenedor Principal: Efecto de Superposición === */
+.content-box {
+    width: 75%;
+    min-height: 100vh;
+    position: relative;
+    z-index: 10;
+    margin-top: 0px !important;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* === 4. Media Queries y Utilidades === */
+@media (min-width: 768px) {
+    .border-start-md {
+        border-left: 1px solid #d9d9d9;
+    }
+}
+
+@media (max-width: 992px) {
+    .content-box {
+        width: 100%;
+        margin-top: 0 !important;
+        border-radius: 0;
+    }
+}

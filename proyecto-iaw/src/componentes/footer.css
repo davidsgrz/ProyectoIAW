@@ -1,51 +1,130 @@
 .footer {
-  width: 100%;
-  background: #0b2a32; /* azul petróleo como Mercadona */
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  margin-top: 60px;
-  padding-top: 40px;
+    background-color: #1c3037;
+    color: #ffffff;
+    padding: 3.5rem 0 1.5rem 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.9rem;
+    margin-top: auto;
 }
 
-/* ----- ZONA SUPERIOR: Columnas ----- */
 .footer__top {
-  display: flex;
-  justify-content: center;
-  gap: 80px;
-  padding: 0 40px 40px;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    gap: 2rem;
 }
 
 .footer__col {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    min-width: 140px;
 }
 
 .footer__col h4 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+    font-size: 1.1rem;
+    color: #ffffff;
 }
 
 .footer__col a {
-  color: #cbd3d4;
-  text-decoration: none;
-  font-size: 15px;
+    color: #b0b8bc;
+    text-decoration: none;
+    margin-bottom: 0.6rem;
+    cursor: pointer;
+    transition: color 0.2s;
+    font-size: 0.9rem;
 }
 
 .footer__col a:hover {
-  color: #ffffff;
+    color: #ffffff;
+    text-decoration: underline;
 }
 
-/* ----- ZONA INFERIOR: Derechos legales ----- */
-.footer__bottom {
-  width: 100%;
-  border-top: 1px solid #1b3e45;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  color: #d7e
+.footer__contact {
+    text-align: right;
+    min-width: 200px;
+}
+
+.footer__phone {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.footer__phone-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+
+.footer__social i {
+    color: #ffffff;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.footer__social i:hover {
+    opacity: 1;
+}
+
+.footer__bottom-bar {
+    max-width: 1100px;
+    margin: 3rem auto 0 auto;
+    padding: 1.5rem 1rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer__copyright {
+    font-size: 0.75rem;
+    color: #b0b8bc;
+}
+
+.footer__legal {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.footer__legal a {
+    color: #b0b8bc;
+    text-decoration: underline;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+.footer__legal a:hover {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .footer__contact {
+        text-align: center;
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .footer__phone, .footer__social {
+        justify-content: center;
+    }
+    .footer__bottom-bar {
+        flex-direction: column;
+        text-align: center;
+    }
 }
