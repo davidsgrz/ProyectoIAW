@@ -16,7 +16,7 @@ function At_Cliente() {
             alignment="start"
             color="light"
             imageUrl="/assets/At_cliente.jpg"
-            isHero={true}
+            EsBanner={true}
           />
         </div>
         {/* Contenido Principal */}

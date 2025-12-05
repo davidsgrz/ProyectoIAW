@@ -45,8 +45,11 @@ export default function Footer() {
           
           {/* Bloque del Teléfono Gratuito */}
           <div className="footer__phone">
-            <i className="bi bi-headset fs-3"></i> {/* Icono de 'headset' de Bootstrap */}
-            <span className="footer__phone-number">800 500 220</span>
+            <span className="image">
+                <img src="/assets/call-center.png" className="img-fluid" alt="Responsive image" />
+            </span>
+            <span/>
+            <span>800 500 220</span>
           </div>
 
           {/* Bloque de Iconos de Redes Sociales */}
@@ -62,21 +65,17 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* BARRA INFERIOR  */}
-      <div className="footer__bottom-bar">
-        
-        {/* Texto de Copyright y CIF */}
-        <div className="footer__copyright">
-          © Mercadona S.A. A46103834. Todos los derechos reservados.
-        </div>
+      {/* Enlaces legales */}
+      <div className="footer__legal">
+        <a>Accesibilidad</a>
+        <a>Política de privacidad</a>
+        <a>Política de cookies</a>
+        <a>Términos y condiciones</a>
+      </div>
 
-        {/* Enlaces Legales */}
-        <div className="footer__legal">
-          <a>Accesibilidad</a>
-          <a>Política de privacidad</a>
-          <a>Política de cookies</a>
-          <a>Términos y condiciones</a>
-        </div>
+      {/* Derechos */}
+      <div className="footer__bottom">
+        © Mercadona S.A. A46103834. Todos los derechos reservados.
       </div>
     </footer>
   );

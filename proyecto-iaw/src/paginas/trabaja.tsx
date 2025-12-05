@@ -16,7 +16,7 @@ function Trabaja() {
             alignment="center"
             color="light"
             videoUrl="/assets/Trabaja.mp4"
-            isHero={true}
+            EsBanner={true}
           >
             <p className="fs-5 text-white mb-4 mx-auto" style={{ maxWidth: '700px' }}>
               Cada día surgen nuevas oportunidades. Crea tu perfil y te ayudaremos a encontrar tu puesto.

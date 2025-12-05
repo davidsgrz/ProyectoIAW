@@ -20,7 +20,7 @@ function Supermercados() {
             imageUrl="/assets/Supermercados.jpg"
             color="light"
             alignment="start"
-            isHero={false}
+            EsBanner={false}
         />
 
         {/* Contenido Principal */}
