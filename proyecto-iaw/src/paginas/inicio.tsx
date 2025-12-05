@@ -1,3 +1,4 @@
+import { Button, Form } from "react-bootstrap";
 import Footer from "../componentes/footer";
 import Header from "../componentes/header";
 import Navb from "../componentes/navbar";
@@ -7,10 +8,37 @@ function Inicio() {
     <div className="mt-4">
       <Navb />
       <Header
-        text="Empieza tu compra en Mercadona"
+        text=" "
         alignment="end"
+        EsBanner={true}
         imageUrl="./assets/banner_mercadona_inicio.jpg"
-      />
+      >
+        <div className="text-start ms-auto" style={{ maxWidth: "600px" }}>
+          <h1 className="display-4 fw-bold mb-3 text-dark">
+            Empieza tu compra en Mercadona
+          </h1>
+          <p className="text-secondary mb-4">
+            Introduce tu código postal y dependiendo de tu ciudad accederás a la
+            nueva compra online o a la web clásica.
+          </p>
+          <div className="d-flex align-items-center gap-2">
+            <Form.Control
+              type="text"
+              placeholder="Código postal"
+              defaultValue="00000"
+              className="py-2 border-0 shadow-sm"
+              style={{ maxWidth: "150px", backgroundColor: "#f8f9fa" }}
+            />
+            <Button
+              variant="success"
+              className="fw-bold px-4 py-2"
+              style={{ backgroundColor: "#00a364", border: "none" }}
+            >
+              ENTRAR
+            </Button>
+          </div>
+        </div>
+      </Header>
       {/* Primera seccion del contenido */}
       <section className="container-fluid py-5">
         <div className="container-md mx-auto">
@@ -52,7 +80,7 @@ function Inicio() {
           </div>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
