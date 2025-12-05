@@ -1,0 +1,70 @@
+/* Fondo blanco y sombra ligera */
+.o-navbar-fluid {
+  background-color: white !important;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Ajuste del contenedor */
+.o-navbar-fluid .container {
+  height: 70px !important;
+  display: flex;
+  align-items: center;
+}
+
+/* Marca del logo */
+.navbar-brand img {
+  width: 180px;
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Texto de los enlaces */
+.navbar-nav .nav-link {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e1e1e !important;
+  margin-left: 15px;
+}
+
+/* Hover en verde Mercadona */
+.navbar-nav .nav-link:hover {
+  color: #00954c !important;
+}
+
+/* Enlace activo */
+.navbar-nav .nav-link.active {
+  color: #00954c !important;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.dropdown-item:hover {
+  background-color: #00954c;
+  color: #ffffff !important;
+}
+
+/* Botón hamburguesa en móvil */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(45%) sepia(86%) saturate(1593%) hue-rotate(109deg) brightness(94%) contrast(102%);
+}
+
+/* Responsive: Logo centrado en móvil */
+@media (max-width: 992px) {
+  .navbar-brand {
+    margin: auto;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 12px;
+    font-size: 18px;
+    text-align: center;
+  }
+}

@@ -2,15 +2,16 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import "./navbar.css";
 
 function Navb() {
   return (
     <Navbar className="o-navbar-fluid navbar-expand-lg fixed-top bg-light" expand="lg">
       <Container className='w-75'>
-        <Navbar.Brand href="/">
+        <Navbar.Brand>
         <img
           src="/assets/logo_mercadona.png"
-            height="30"
+            height="120"
             alt="Mercadona"
         />
         </Navbar.Brand>
