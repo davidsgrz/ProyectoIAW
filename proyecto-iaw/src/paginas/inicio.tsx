@@ -4,7 +4,7 @@ function Inicio() {
   return (
     <div className="mt-4">
       <Header
-        text="Bienvenido a la página de inicio que se encuentra en inicio.tsx"
+        text="Empieza tu compra en Mercadona"
         alignment="end"
         imageUrl="./assets/banner_mercadona_inicio.jpg"
       />
