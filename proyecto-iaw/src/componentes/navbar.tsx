@@ -7,7 +7,13 @@ function Navb() {
   return (
     <Navbar className="o-navbar-fluid navbar-expand-lg fixed-top bg-light" expand="lg">
       <Container className='w-75'>
-        <Navbar.Brand href="/">Mercadona</Navbar.Brand>
+        <Navbar.Brand href="/">
+        <img
+          src="/assets/logo_mercadona.png"
+            height="30"
+            alt="Mercadona"
+        />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
