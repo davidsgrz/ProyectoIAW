@@ -54,10 +54,12 @@ export default function Footer() {
 
       {/* Enlaces legales */}
       <div className="footer__legal">
-        <a>Accesibilidad</a>
-        <a>Política de privacidad</a>
-        <a>Política de cookies</a>
-        <a>Términos y condiciones</a>
+        
+          <a href="#" className="text-success fw-semibold small"> Accesibilidad</a>
+          <a href="#" className="text-success fw-semibold small"> Política de privacidad</a>
+          <a href="#" className="text-success fw-semibold small"> Política de cookies</a>
+          <a href="#" className="text-success fw-semibold small"> Términos y condiciones</a>
+        
       </div>
 
       {/* Derechos */}
